@@ -29,7 +29,8 @@ function Card({ data }) {
             <div className="tag flex w-full items-center justify-center bg-green-600 py-4">
               <h3 className="text-[17px] font-semibold">Dowload Now</h3>
             </div>
-          ) : null} {/*agr open hai ya dwnloadable hai toh show kro nhi toh kuch mt dhekhao*/}
+          ) : null} {/*agr open hai ya dwnloadable hai toh show kro nhi toh kuch mt dhekhaao*/}
+          
         </div>
       </div>
     </>
