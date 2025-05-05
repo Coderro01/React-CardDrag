@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+* {
+    font-family: "Questrial", sans-serif;
+
+}
+
+body {
+    background-color: grey;
+    color: whitesmoke;
+}
+
+::selection {
+    color: rgb(206, 112, 41);
+}
