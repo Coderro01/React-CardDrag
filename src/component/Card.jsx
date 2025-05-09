@@ -1,15 +1,15 @@
 import React from "react";
-
-
 import { FaRegFileCode } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
-import { motion } from "framer-motion";
+import motion from "framer-motion";
 
-function Card({ data , reference }) {
+function Card({ data, reference }) {
   return (
     <>
-        <motion.div dragConstraint={ reference} className="flex-shring-0 relative h-72 w-60 overflow-hidden rounded-[40px] bg-red-950 px-8 py-10"
+      <motion.div
+        dragConstraint={reference}
+        className="flex-shring-0 relative h-72 w-60 overflow-hidden rounded-[40px] bg-red-950 px-8 py-10"
       >
         <FaRegFileCode />
         <p className="mt-5 text-xl leading-tight">{data.detail}</p>
@@ -31,7 +31,9 @@ function Card({ data , reference }) {
           {/*tagColor & tagTiltle*/}
           {data.tag.isOpen && (
             <div
-              className={`tag flex w-full items-center justify-center ${data.tag.tagColor === "blue" ? "bg-red-400" : "bg-yellow-500"} py-4`}
+              className={`tag flex w-full items-center justify-center ${
+                data.tag.tagColor === "blue" ? "bg-red-400" : "bg-yellow-500"
+              } py-4`}
             >
               <h3 className="text-[17px] font-semibold">{data.tag.tagTitle}</h3>
             </div>
